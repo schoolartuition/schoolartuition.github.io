@@ -16,28 +16,28 @@
   });
 
 
-	$('.owl-our-team').owlCarousel({
-		items:3,
-		loop:true,
-		dots: true,
-		nav: false,
-		autoplay: true,
-		margin:0,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:3
-			  },
-			  1600:{
-				  items:3
-			  }
-		  }
-	})
+	// $('.owl-why-us').owlCarousel({
+	// 	items:3,
+	// 	loop:true,
+	// 	dots: true,
+	// 	nav: false,
+	// 	autoplay: true,
+	// 	margin:0,
+	// 	  responsive:{
+	// 		  0:{
+	// 			  items:1
+	// 		  },
+	// 		  600:{
+	// 			  items:2
+	// 		  },
+	// 		  1000:{
+	// 			  items:3
+	// 		  },
+	// 		  1600:{
+	// 			  items:3
+	// 		  }
+	// 	  }
+	// })
 	
 
 	// Menu Dropdown Toggle
@@ -67,6 +67,42 @@
       }
     }
   });
+
+
+
+  // OWL CAROUSEL
+$(document).ready(function(){
+  $(".owl-why-us").owlCarousel({
+    items: 3,
+    loop:true,
+    responsive: {
+			0: {
+				items: 1,
+        nav: true
+      
+			},
+			480: {
+				items: 1,
+				nav: false
+			},
+			768: {
+				items: 2,
+				nav: true,
+				
+			},
+			992: {
+				items: 3,
+				nav: true,
+				
+			}
+		},
+  });
+});
+  // OWL END
+
+
+
+
 
   $(document).ready(function () {
       $(document).on("scroll", onScroll);

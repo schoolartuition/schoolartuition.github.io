@@ -948,7 +948,7 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1575,3 +1575,29 @@ responsive
     margin-left: 0px;
   }
 }
+
+
+  .owl-stage {
+    display: flex;
+  }
+
+  .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+  }
+
+  .flex-text {
+    flex-grow: 1
+  }
+
+  .thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
